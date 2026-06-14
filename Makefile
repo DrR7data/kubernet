@@ -66,4 +66,7 @@ get-dn:
 	kubectl get deployment nginx-deployment -o yaml
 get-dn-w:
 	kubectl get deployment nginx-deployment -o yaml > nginx-deployment-result.yaml
+del-d-sn: # Para describir un servicio.
+	kubectl delete -f nginx-deployment.yaml
+	kubectl delete -f nginx-service.yaml
 
